@@ -291,7 +291,17 @@ textarea {
   .projects__row:last-child {
     margin-bottom: 0; }
   .projects__row-img-cont {
+    position: relative;
     overflow: hidden; }
+  .project-image {
+      position: absolute;
+      top: 10%; /* Adjust top position as needed */
+      left: 14.8%; /* Adjust left position as needed */
+      width: 71%; /* Adjust width as needed */
+      height: 75%;
+      z-index: 1; /* Ensure the image is on top */
+      object-fit: fill;
+    }
   .projects__row-img {
     width: 100%;
     display: block;
@@ -322,6 +332,7 @@ textarea {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
 
+     
 .contact {
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
@@ -442,9 +453,26 @@ textarea {
       .project-details__content-title {
         font-size: 2.4rem; } }
 
-.project-details__showcase-img-cont {
-  width: 100%;
-  margin-bottom: 6rem; }
+        .project-details__showcase-img-cont {
+          width: 100%;
+          margin-bottom: 6rem;
+          position: relative; /* Add relative positioning to the container */
+        }
+        
+        .project-image1 {
+          position: absolute;
+          top: 9%; /* Adjust top position as needed */
+          left: 14.3%; /* Adjust left position as needed */
+          width: 72%; /* Adjust width as needed */
+          height:76%; /* Set height to auto to maintain aspect ratio */
+          z-index: 1; /* Ensure the image is on top */
+          max-width: 100%; /* Limit maximum width to container width */
+          max-height: 100%; /* Limit maximum height to container height */
+          object-fit: fill; /* Maintain aspect ratio and fit within container */
+        }
+        
+  
+  
 
 .project-details__showcase-img {
   width: 100%; }
