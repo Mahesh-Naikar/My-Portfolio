@@ -730,3 +730,9 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+    .home-hero__social-resume-icon {
+      width: 100%; 
+      filter: invert(1) contrast(1);
+  }
+  
